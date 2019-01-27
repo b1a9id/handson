@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="'ユーザ詳細 | ' + ${user.name}">ユーザ詳細</title>
+</head>
+<body>
+    <h1 th:text="${user.name}">ユーザ詳細</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <td th:text="${user.id}">あいでぃー</td>
+        </tr>
+        <tr>
+            <th>名前</th>
+            <td th:text="${user.name}">なまえ</td>
+        </tr>
+        <tr>
+            <th>年齢</th>
+            <td th:text="${user.age}">ねんれい</td>
+        </tr>
+        <tr>
+            <th>性別</th>
+            <td th:text="#{|gender.${user.gender}|}">ねんれい</td>
+        </tr>
+        <tr>
+            <th>画像URL</th>
+            <td>
+                <a th:href="${user.imageUrl}" th:text="${user.imageUrl}"></a>
+            </td>
+        </tr>
+        <tr>
+            <th>趣味</th>
+            <td th:text="${user.hobby}">しゅみ</td>
+        </tr>
+        <tr>
+            <th>特技</th>
+            <td th:text="${user.speciality}">とくぎ</td>
+        </tr>
+    </table>
+</body>
+</html>
