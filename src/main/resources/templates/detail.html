@@ -37,30 +37,10 @@
                 <td th:text="${user.id}">あいでぃー</td>
               </tr>
               <tr>
-                <th>名前</th>
-                <td th:text="${user.name}">なまえ</td>
-              </tr>
-              <tr>
-                <th>年齢</th>
-                <td th:text="${user.age}">ねんれい</td>
-              </tr>
-              <tr>
-                <th>性別</th>
-                <td th:text="#{|gender.${user.gender}|}">ねんれい</td>
-              </tr>
-              <tr>
                 <th>画像URL</th>
                 <td>
                   <a th:href="${user.imageUrl}" th:text="${user.imageUrl}" target="_blank"></a>
                 </td>
-              </tr>
-              <tr>
-                <th>趣味</th>
-                <td th:text="${user.hobby}">しゅみ</td>
-              </tr>
-              <tr>
-                <th>特技</th>
-                <td th:text="${user.speciality}">とくぎ</td>
               </tr>
             </table>
           </div>

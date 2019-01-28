@@ -35,16 +35,12 @@
 						<thead>
 						<tr>
 							<th>ID</th>
-							<th>NAME</th>
-							<th>IMAGE</th>
 							<th></th>
 						</tr>
 						</thead>
 						<tbody>
 						<tr th:each="user : ${users}">
 							<td th:text="${user.id}">あいでぃー</td>
-							<td><a th:href="@{/users/{id}(id=${user.id})}" th:text="${user.name}">なまえ</a></td>
-							<td><img class="rounded" th:src="${user.imageUrl}" width="200" height="200"/></td>
 							<td class="text-center">
 								<form method="post" th:action="@{/users/{id}(id=${user.id})}">
 									<input type="hidden" name="_method" value="delete"/>
